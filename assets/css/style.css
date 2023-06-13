@@ -253,6 +253,10 @@ color: #4BAE4F;
     border: 1px solid var(--title-color);
 }
 
+.text_box p{
+    margin-top: 20px;
+}
+
 
 /* ----------------- */
 .dropdown-container {
