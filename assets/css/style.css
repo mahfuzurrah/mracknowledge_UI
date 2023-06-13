@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    /* COLOR */
+    --primary-color: #384899;
+    --secondary-color: #7fcfd3;
+    --title-color: #0f0324;
+    --description-color: #545454;
+    --white-color: #ffffff;
+    --border-color: #e4e5e7;
+    --bg-color: #EBF0FE;
+    /* TYPOGRAPHY */
+    --h1-font-size: 22px;
+    --h2-font-size: 20px;
+    --normal-font-size: 15px;
+    --small-font-size: 13px;
+    /* TYPOGRAPHY */
+    --body-font: 'Poppins', sans-serif;
+}
+
+/*========== BASE ==========*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scroll-container {
+    height: 20px;
+    overflow-y: scroll;
+}
+
+.scroll-content {
+    padding: 20px;
+}
+
+/* Hide default scrollbar */
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+    padding: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+    background: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+p {
+    font-size: var(--normal-font-size);
+    color: var(--description-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Common css Style */
+
+
+
+.btn {
+    padding: 18px 30px;
+    border-radius: 100px;
+    font-size: var(--normal-font-size);
+    background: var(--primary-color);
+    color: var(--white-color);
+    transition: all 0.5s ease-in-out;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.btn_s {
+    padding: 18px 30px;
+    border-radius: 100px;
+    font-size: var(--normal-font-size);
+    color: var(--primary-color);
+    transition: all 0.5s ease-in-out;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+input{
+    padding: 15px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+/* section {
+    padding: 3.5rem 0;
+} */
+
+.container {
+    max-width: 430px;
+    margin: auto;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background: var(--white-color);
+}
+
+.wrapper{
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.icons{
+    font-size: 24px;
+    color: var(--description-color);
+}
+
+.mt-1,
+.mb-1{
+    margin-top: 10px;
+}
+
+.mt-2,
+.mb-2{
+    margin-top: 20px;
+}
+
+.mt-3,
+.mb-3{
+    margin-top: 30px;
+}
+
+.mt-4,
+.mb-4{
+    margin-top: 40px;
+}
+
+.mt-5,
+.mb-5{
+    margin-top: 50px;
+}
+
+.text_center{
+    text-align: center;
+}
+
+
+
+
+/* ======================= */
+
+/* ======================= */
+
+.banner img {
+    width: 100%;
+    height: 210px;
+}
+
+.caddy_golfer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.caddy_golfer .caddy,
+.caddy_golfer .golfer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    position: relative;
+    border-radius: 16px;
+}
+
+.caddy_golfer .icons{
+color: #DADADA;
+position: absolute;
+top: 15px;
+right: 15px;
+}
+
+.caddy_golfer .active{
+border-color: #4BAE4F;
+}
+
+.caddy_golfer .active .icons{
+color: #4BAE4F;
+}
+
+.text_box{
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: var(--bg-color);
+    border: 1px solid var(--title-color);
+}
+
+
+/* ----------------- */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+  }
+
+  .selected-text{
+    margin-right: 20px;
+  }
+
+  .dropdown-container .selected-option {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-right: 1px solid var(--border-color);
+  }
+
+  .fa-chevron-down.icons{
+    font-size: 14px;
+  }
+
+  .dropdown-container .selected-option i {
+    margin-left: 8px;
+  }
+
+  .dropdown-container .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    min-width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: auto;
+    margin-top: 10px;
+  }
+
+  .dropdown-container .dropdown-list.open {
+    display: block;
+  }
+
+  .dropdown-container .dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+
+  .dropdown-container .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown-container .flag-icon {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+.input_area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.input_area .input_field{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: #F8F8F8;
+    padding: 8px 0;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.input_area input{
+    border: none;
+    background: transparent;
+    width: 100%;
+}
+
+
+/* ================
+otp_page
+ ================= */
+
+.otp_area {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.otp_area input{
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* ================
+Add Bank
+ ================= */
+
+ .icon-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .icon-input input {
+    padding-left: 40px;
+    width: 100%;
+    font-size: 14px;
+    color: var(--description-color);
+  }
+
+  .icon-input .icon {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+
+  .icon-input .icon .icons{
+    font-size: 16px;
+    color: var(--description-color)
+  }
