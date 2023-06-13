@@ -10,15 +10,6 @@ function activateSection(section) {
       golfer.classList.add('active');
     }
 }
-
-function setCurrentDate() {
-  var currentDate = new Date();
-  var day = currentDate.getDate();
-  var month = currentDate.getMonth() + 1; // Adding 1 because months are zero-based
-  var year = currentDate.getFullYear();
-  var formattedDate = year + '-' + month + '-' + day;
-  document.getElementById('dateInput').value = formattedDate;
-}
   
 // Phone Number
 
