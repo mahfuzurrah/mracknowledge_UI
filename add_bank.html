@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body>
+<body onload="setCurrentDate()">
     <section class="otp_page">
         <div class="container">
             <div class="wrapper">
@@ -32,7 +32,7 @@
                     </div>
                     <div class="icon-input">
                         <span class="icon"><i class="fa-solid fa-calendar-days icons"></i></span>
-                        <input type="text" placeholder="Exp (MM/YY)">
+                        <input type="text" id="dateInput" placeholder="Exp (MM/YY)">
                     </div>
                     <div class="icon-input">
                         <span class="icon"><i class="fa-solid fa-shield icons"></i></span>

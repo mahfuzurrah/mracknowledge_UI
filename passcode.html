@@ -18,31 +18,37 @@
                     <i class="fa-solid fa-arrow-left icons"></i>
                 </a>
                 <div class="text_center mb-5">
-                    <h2>Passcode</h2>
+                    <h2>PIN</h2>
                     <p>Please set passcode for the app</p>
                 </div>
                 <div style="height: 50vh">
                     <div class="mt-5">
                         <p>Create passcode</p>
                         <div class="otp_area mt-1">
-                            <input type="text" />
-                            <input type="text" />
-                            <input type="text" />
-                            <input type="text" />
+                            <input type="text" maxlength="1" onkeyup="handleInputTwo(this, input2)"
+                            onkeydown="handleBackspace(this, input1)">
+                        <input type="text" id="input2" maxlength="1" onkeyup="handleInput(this, input3)"
+                            onkeydown="handleBackspace(this, input1)">
+                        <input type="text" id="input3" maxlength="1" onkeyup="handleInput(this, input4)"
+                            onkeydown="handleBackspace(this, input2)">
+                        <input type="text" id="input4" maxlength="1" onkeyup="handleInput(this, input5)"
+                            onkeydown="handleBackspace(this, input3)">
+                        <input type="text" id="input5" maxlength="1" onkeydown="handleBackspace(this, input4)">
                         </div>
                     </div>
                     <div class="mt-2">
                         <p>Re enter passcode</p>
                         <div class="otp_area mt-1">
-                            <input type="text" />
-                            <input type="text" />
-                            <input type="text" />
-                            <input type="text" />
-                        </div>
+                            <input type="text" maxlength="1" onkeyup="handleInputThree(this, input6)" onkeydown="handleBackspace(this, null)">
+                            <input type="text" id="input6" maxlength="1" onkeyup="handleInputThree(this, input7)" onkeydown="handleBackspace(this, input6)">
+                            <input type="text" id="input7" maxlength="1" onkeyup="handleInputThree(this, input8)" onkeydown="handleBackspace(this, input7)">
+                            <input type="text" id="input8" maxlength="1" onkeyup="handleInputThree(this, input9)" onkeydown="handleBackspace(this, input8)">
+                            <input type="text" id="input9" maxlength="1" onkeydown="handleBackspace(this, input9)">
+                          </div>
                     </div>
                 </div>
 
-                <a href="add_bank.html" class="btn mt-3">Set passcode</a>
+                <a href="add_bank.html" class="btn mt-3">Set Pin</a>
             </div>
         </div>
     </section>

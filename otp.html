@@ -21,13 +21,18 @@
                     <h2>Enter OTP</h2>
                     <p>Enter your phone number to register</p>
                 </div>
-                <div  style="height: 50vh;  display: flex;
+                <div style="height: 50vh;  display: flex;
             flex-direction: column; justify-content: space-between;align-items: center;">
                     <div class="otp_area mt-5">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                        <input type="text" maxlength="1" onkeyup="handleInput(this, input2)"
+                            onkeydown="handleBackspace(this, input1)">
+                        <input type="text" id="input2" maxlength="1" onkeyup="handleInput(this, input3)"
+                            onkeydown="handleBackspace(this, input1)">
+                        <input type="text" id="input3" maxlength="1" onkeyup="handleInput(this, input4)"
+                            onkeydown="handleBackspace(this, input2)">
+                        <input type="text" id="input4" maxlength="1" onkeyup="handleInput(this, input5)"
+                            onkeydown="handleBackspace(this, input3)">
+                        <input type="text" id="input5" maxlength="1" onkeydown="handleBackspace(this, input4)">
                     </div>
                 </div>
 
