@@ -139,15 +139,17 @@ img {
     color: var(--white-color);
 }
 
-input{
+input {
     padding: 15px 20px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
 }
 
-/* section {
-    padding: 3.5rem 0;
-} */
+.body_area {
+    height: 100vh;
+}
+
+
 
 .container {
     max-width: 430px;
@@ -159,42 +161,43 @@ input{
     background: var(--white-color);
 }
 
-.wrapper{
+.wrapper {
     margin-top: 30px;
     padding: 0 20px;
+    height: 100%;
 }
 
-.icons{
+.icons {
     font-size: 24px;
     color: var(--description-color);
 }
 
 .mt-1,
-.mb-1{
+.mb-1 {
     margin-top: 10px;
 }
 
 .mt-2,
-.mb-2{
+.mb-2 {
     margin-top: 20px;
 }
 
 .mt-3,
-.mb-3{
+.mb-3 {
     margin-top: 30px;
 }
 
 .mt-4,
-.mb-4{
+.mb-4 {
     margin-top: 40px;
 }
 
 .mt-5,
-.mb-5{
+.mb-5 {
     margin-top: 50px;
 }
 
-.text_center{
+.text_center {
     text-align: center;
 }
 
@@ -230,22 +233,22 @@ input{
     border-radius: 16px;
 }
 
-.caddy_golfer .icons{
-color: #DADADA;
-position: absolute;
-top: 15px;
-right: 15px;
+.caddy_golfer .icons {
+    color: #DADADA;
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
-.caddy_golfer .active{
-border-color: #4BAE4F;
+.caddy_golfer .active {
+    border-color: #4BAE4F;
 }
 
-.caddy_golfer .active .icons{
-color: #4BAE4F;
+.caddy_golfer .active .icons {
+    color: #4BAE4F;
 }
 
-.text_box{
+.text_box {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -253,7 +256,7 @@ color: #4BAE4F;
     border: 1px solid var(--title-color);
 }
 
-.text_box p{
+.text_box p {
     margin-top: 20px;
 }
 
@@ -263,30 +266,30 @@ color: #4BAE4F;
     position: relative;
     display: inline-block;
     width: 120px;
-  }
+}
 
-  .selected-text{
+.selected-text {
     margin-right: 20px;
-  }
+}
 
-  .dropdown-container .selected-option {
+.dropdown-container .selected-option {
     display: flex;
     align-items: center;
     padding: 8px;
     border-radius: 4px;
     cursor: pointer;
     border-right: 1px solid var(--border-color);
-  }
+}
 
-  .fa-chevron-down.icons{
+.fa-chevron-down.icons {
     font-size: 14px;
-  }
+}
 
-  .dropdown-container .selected-option i {
+.dropdown-container .selected-option i {
     margin-left: 8px;
-  }
+}
 
-  .dropdown-container .dropdown-list {
+.dropdown-container .dropdown-list {
     position: absolute;
     top: 100%;
     left: 0;
@@ -298,29 +301,29 @@ color: #4BAE4F;
     border-radius: 4px;
     overflow: auto;
     margin-top: 10px;
-  }
+}
 
-  .dropdown-container .dropdown-list.open {
+.dropdown-container .dropdown-list.open {
     display: block;
-  }
+}
 
-  .dropdown-container .dropdown-item {
+.dropdown-container .dropdown-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 4px 8px;
     cursor: pointer;
-  }
+}
 
-  .dropdown-container .dropdown-item:hover {
+.dropdown-container .dropdown-item:hover {
     background-color: #f1f1f1;
-  }
+}
 
-  .dropdown-container .flag-icon {
+.dropdown-container .flag-icon {
     width: 24px;
     height: 16px;
     margin-right: 8px;
-  }
+}
 
 .input_area {
     display: flex;
@@ -329,7 +332,7 @@ color: #4BAE4F;
     width: 100%;
 }
 
-.input_area .input_field{
+.input_area .input_field {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -341,7 +344,7 @@ color: #4BAE4F;
     width: 100%;
 }
 
-.input_area input{
+.input_area input {
     border: none;
     background: transparent;
     width: 100%;
@@ -356,10 +359,9 @@ otp_page
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
 }
 
-.otp_area input{
+.otp_area input {
     width: 60px;
     height: 60px;
     font-size: 20px;
@@ -367,32 +369,40 @@ otp_page
     padding: 0;
 }
 
+.wrapper_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    gap: 30px;
+}
+
 
 /* ================
 Add Bank
  ================= */
 
- .icon-input {
+.icon-input {
     position: relative;
     display: inline-block;
     width: 100%;
     margin-top: 20px;
-  }
+}
 
-  .icon-input input {
+.icon-input input {
     padding-left: 40px;
     width: 100%;
     font-size: 14px;
     color: var(--description-color);
-  }
+}
 
-  .icon-input .icon {
+.icon-input .icon {
     position: absolute;
     top: 12px;
     left: 10px;
-  }
+}
 
-  .icon-input .icon .icons{
+.icon-input .icon .icons {
     font-size: 16px;
     color: var(--description-color)
-  }
+}

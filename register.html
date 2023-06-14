@@ -13,52 +13,57 @@
 </head>
 
 <body>
-    <section class="screen">
+    <div class="body_area screen">
         <div class="container">
             <div class="wrapper">
                 <a href="index.html" class="top_back_icon">
                     <i class="fa-solid fa-arrow-left icons"></i>
                 </a>
-                <div class="text_center mt-5">
-                    <h2>Register</h2>
-                    <p>Please register to continue with the app</p>
-                </div>
-                <div style="height: 50vh;  display: flex;
-            flex-direction: column; justify-content: space-between;align-items: center;">
-                    <div class="input_area mt-5">
-                        <label for="">Phone Number</label>
-                        <div class="input_field mt-1">
-                            <div class="dropdown-container">
-                                <div class="selected-option">
-                                    <i class="selected-icon"></i>
-                                    <span class="selected-text">Country</span>
-                                    <i class="fas fa-chevron-down icons"></i>
-
-                                </div>
-                                <div class="dropdown-list">
-                                    <div class="dropdown-item" data-value="us">
-                                        <i class="flag-icon flag-icon-us"></i>
+                <div class="wrapper_item">
+                    <div class="item">
+                        <div class="text_center mt-5">
+                            <h2>Register</h2>
+                            <p>Please register to continue with the app</p>
+                        </div>
+                        <div style="display: flex;
+                    flex-direction: column; justify-content: space-between;align-items: center;">
+                            <div class="input_area mt-5">
+                                <label for="">Phone Number</label>
+                                <div class="input_field mt-1">
+                                    <div class="dropdown-container">
+                                        <div class="selected-option">
+                                            <i class="selected-icon"></i>
+                                            <span class="selected-text">Country</span>
+                                            <i class="fas fa-chevron-down icons"></i>
+        
+                                        </div>
+                                        <div class="dropdown-list">
+                                            <div class="dropdown-item" data-value="us">
+                                                <i class="flag-icon flag-icon-us"></i>
+                                            </div>
+                                            <div class="dropdown-item" data-value="gb">
+                                                <i class="flag-icon flag-icon-gb"></i>
+                                            </div>
+                                            <div class="dropdown-item" data-value="ca">
+                                                <i class="flag-icon flag-icon-ca"></i>
+                                            </div>
+                                            <!-- Add more country options as needed -->
+                                        </div>
                                     </div>
-                                    <div class="dropdown-item" data-value="gb">
-                                        <i class="flag-icon flag-icon-gb"></i>
-                                    </div>
-                                    <div class="dropdown-item" data-value="ca">
-                                        <i class="flag-icon flag-icon-ca"></i>
-                                    </div>
-                                    <!-- Add more country options as needed -->
+                                    <input type="phone" placeholder="Type your number">
                                 </div>
                             </div>
-                            <input type="phone" placeholder="Type your number">
                         </div>
                     </div>
+                    <div class="item">
+                        <a href="otp.html" class="btn mt-3">
+                            Register
+                        </a>
+                    </div>
                 </div>
-
-                <a href="otp.html" class="btn mt-3">
-                    Register
-                </a>
             </div>
         </div>
-    </section>
+    </div>
     <!-- ============================== -->
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/all.min.js"></script>
