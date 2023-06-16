@@ -11,6 +11,8 @@ function activateSection(section) {
   }
 }
 
+
+
 const listItems = document.querySelectorAll(".list");
 
 listItems.forEach((item) => {
@@ -31,3 +33,70 @@ listItems.forEach((item) => {
     }
   });
 });
+
+
+// PIN & OTP
+
+function handleInput(currentInput, nextInput) {
+  if (currentInput.value.length === currentInput.maxLength) {
+    nextInput.focus();
+  }
+}
+
+function handleInputTwo(currentInput, nextInput) {
+  if (currentInput.value.length === currentInput.maxLength) {
+    nextInput.focus();
+  }
+}
+
+function handleInputThree(currentInput, nextInput) {
+  if (currentInput.value.length === currentInput.maxLength) {
+    if (nextInput) {
+      nextInput.focus();
+    }
+  }
+}
+
+function handleBackspace(currentInput, previousInput) {
+  if (currentInput.value.length === 0 && event.keyCode === 8) {
+    previousInput.focus();
+  }
+}
+
+// Add Bank Details
+
+document.querySelector('input').addEventListener('focus', function () {
+  this.setAttribute('placeholder', '');
+});
+
+document.querySelector('input').addEventListener('blur', function () {
+  this.setAttribute('placeholder');
+});
+
+
+// Image Upload
+
+document.getElementById('imageUpload').addEventListener('change', handleImageUpload);
+
+function handleImageUpload(event) {
+  const files = event.target.files;
+  const thumbnailsContainer = document.querySelector('.thumbnails');
+
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
+    const reader = new FileReader();
+
+    reader.onload = function() {
+      const thumbnail = document.createElement('div');
+      thumbnail.classList.add('thumbnail');
+
+      const image = new Image();
+      image.src = reader.result;
+
+      thumbnail.appendChild(image);
+      thumbnailsContainer.appendChild(thumbnail);
+    }
+
+    reader.readAsDataURL(file);
+  }
+}

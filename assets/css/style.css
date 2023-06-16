@@ -460,7 +460,7 @@ otp_page
     width: 100%;
 }
 
-.wrapper_item .item{
+.wrapper_item .item {
     width: 100%;
 }
 
@@ -725,4 +725,71 @@ Rate Page
     font-size: 50px;
     margin-bottom: 20px;
     color: #4BAE4F;
+}
+
+
+/* ========================== */
+
+.gallery {
+    margin-bottom: 30px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    flex: 0 0 calc(33.33% - 10px);
+    height: 100px;
+    margin: 5px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery #imageUpload {
+    width: 100%;
+    display: none;
+}
+
+.upload-container {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.upload-label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  background: var(--bg-color);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 18px 20px;
+}
+
+.upload-label:hover {
+  background-color: #d0d0d0;
+}
+
+.camera-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.upload-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #333;
 }
