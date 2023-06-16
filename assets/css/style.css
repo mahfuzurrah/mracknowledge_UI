@@ -297,8 +297,9 @@ input {
 }
 
 .caddy_golfer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -314,6 +315,7 @@ input {
     padding: 20px;
     position: relative;
     border-radius: 16px;
+    width: 180px;
 }
 
 .caddy_golfer .icons {
