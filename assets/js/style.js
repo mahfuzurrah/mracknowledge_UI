@@ -16,20 +16,18 @@ function activateSection(section) {
 const listItems = document.querySelectorAll(".list");
 
 listItems.forEach((item) => {
-  const payer = item.querySelector(".payer");
-
-  payer.addEventListener("click", () => {
+  item.addEventListener("click", () => {
     if (item.classList.contains("active")) {
       item.classList.remove("active");
-      item.querySelector(".fa-circle-check").style.display = "none";
+      item.querySelector(".fa-circle-check").style.color = "#000";
     } else {
       listItems.forEach((otherItem) => {
         otherItem.classList.remove("active");
-        otherItem.querySelector(".fa-circle-check").style.display = "none";
+        otherItem.querySelector(".fa-circle-check").style.color = "#000";
       });
 
       item.classList.add("active");
-      item.querySelector(".fa-circle-check").style.display = "inline-block";
+      item.querySelector(".fa-circle-check").style.color = "red";
     }
   });
 });
